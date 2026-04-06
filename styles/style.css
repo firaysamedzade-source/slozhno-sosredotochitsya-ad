@@ -1,5 +1,37 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-.page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+@media (width >= 1024px) {
+  :root {
+    --menu-margin: 0;
+    --promo-margin: 114px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header .decorations,
+  .footer .decorations {
+    text-shadow: 4px 4px 0px #ff0070;
+  }
+
+  .header__promo {
+    max-inline-size: 491px;
+  }
+
+  .main__section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .factors .main__section-content {
+    grid-column: span 1;
+    grid-row: 2/3;
+  }
+
+  .main__section.gallery {
+    grid-template-rows: auto 260px 315px 428px;
+  }
 }
